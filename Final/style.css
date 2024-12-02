@@ -1,0 +1,209 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header section */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Section containers */
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Form and search input styles */
+#search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#search-input {
+    padding: 0.8rem;
+    width: 80%;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Headings */
+h1, h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Song and Album display sections */
+.song, .album {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.song-info, .album-info {
+    margin-bottom: 1.5rem;
+}
+
+.song-info p, .album-info p {
+    margin: 0.5rem 0;
+}
+
+.song-info .title, .album-info .title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.song-info .artist, .album-info .artist {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.song-info .genre, .album-info .genre {
+    color: #888;
+}
+
+.album-info .release-date {
+    color: #666;
+}
+
+/* Search results and entity display */
+.result-item {
+    margin-bottom: 1.5rem;
+}
+
+.result-item strong {
+    font-weight: bold;
+}
+
+.result-item span {
+    font-size: 1.1rem;
+}
+
+/* Table for displaying music data */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Top artists list */
+#top-artists {
+    list-style-type: none;
+    padding: 0;
+}
+
+#top-artists li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+#top-artists li strong {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Button styling inside results */
+button.view-albums, button.view-recordings {
+    background-color: #444;
+    color: white;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+}
+
+button.view-albums:hover, button.view-recordings:hover {
+    background-color: #666;
+}
+
+/* General layout adjustments */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #search-input {
+        width: 70%;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .result-item {
+        font-size: 0.9rem;
+    }
+}
